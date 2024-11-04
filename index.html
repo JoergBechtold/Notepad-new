@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notizblock Übung Neu</title>
+
+    <script src="scripts/templates.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/assets.css" />
+    <link rel="stylesheet" href="styles/standart.css" />
+    <link rel="stylesheet" href="styles/note.css" />
+  </head>
+
+  <body onload="init()">
+    <h1>Notizblock</h1>
+
+    <div class="inputbox">
+      <p>title:</p>
+      <input id="title_input" placeholder="Titel" type="text" />
+      content:
+      <input id="note_input" placeholder="Notiz" type="text" />
+      <button onclick="addNote()">Notiz Speichern</button>
+    </div>
+
+    <h3>Notizen</h3>
+    <div class="notebox" id="notes_content"></div>
+
+    <h3>Mülleimer</h3>
+    <div class="notebox" id="trash_content"></div>
+
+    <h3>Archive</h3>
+
+    <div class="notebox" id="archiv_content"></div>
+  </body>
+</html>
